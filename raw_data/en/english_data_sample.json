@@ -1,0 +1,43 @@
+[
+    {
+        "entity": "Copthill",
+        "type": [
+            "site",
+            "Villages in County Durham"
+        ],
+        "Qid": "11691500",
+        "ids": "/m/04yzr7",
+        "stage": 0,
+        "infos": {
+            "@context": {
+                "resultScore": "goog:resultScore",
+                "@vocab": "http://schema.org/",
+                "kg": "http://g.co/kg",
+                "EntitySearchResult": "goog:EntitySearchResult",
+                "detailedDescription": "goog:detailedDescription",
+                "goog": "http://schema.googleapis.com/"
+            },
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "EntitySearchResult",
+                    "resultScore": 0,
+                    "result": {
+                        "name": "Copthill",
+                        "@type": [
+                            "City",
+                            "Thing",
+                            "Place"
+                        ],
+                        "@id": "kg:/m/04yzr7",
+                        "detailedDescription": {
+                            "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+                            "articleBody": "Copthill is a village in County Durham, in England. It is situated on the north side of Weardale, between Cowshill and Cornriggs.",
+                            "url": "https://en.wikipedia.org/wiki/Copthill"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+]
