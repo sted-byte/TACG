@@ -60,8 +60,9 @@ sample dataset is release on raw_data/
 ### Data construction
 The data should be constructed as <text>, for example
 ```
-Vitaliy Fedoriv is a Ukrainian football defender who plays for Metal Kharkiv.
+Nicolae Grosu was a Bessarabian politician.	mayor,20th-century Moldovan politicians.
 ```
+### Train
 Then we run the text-topic classifier based on BERT
  ```
  python run_classifier_topic.py   \  
@@ -78,6 +79,33 @@ Then we run the text-topic classifier based on BERT
   --learning_rate=2e-5   \  
   --num_train_epochs=3.0  \  
   --output_dir=output_topic/
+ ```
+
+## concept-topic classifier
+### Data construction
+The data should be constructed as <entitiy \t predicated concept>, for example
+```
+Nicolae Grosu \t 20th - century bessian politicians  
+Nicolae Grosu \t bessarabian politicians
+Nicolae Grosu \t overnment ministers of bessarabia
+```
+### Train
+Then we run the concept-topic classifier based on BERT
+ ```
+ python run_classifier_con_topic.py   \  
+  --task_name=concept  \  
+  --do_train=true \  
+  --do_predict=true \  
+  --do_eval=true  \  
+  --data_dir=dataset   \  
+  --vocab_file=uncased_L-12_H-768_A-12/vocab.txt   \  
+  --bert_config_file=uncased_L-12_H-768_A-12/bert_config.json   \  
+  --init_checkpoint=uncased_L-12_H-768_A-12/bert_model.ckpt   \  
+  --max_seq_length=256  \  
+  --train_batch_size=8  \  
+  --learning_rate=2e-5   \  
+  --num_train_epochs=3.0  \  
+  --output_dir=output_con/
  ```
 
 ## results
