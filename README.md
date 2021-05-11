@@ -85,9 +85,9 @@ Then we run the text-topic classifier based on BERT
 ### Data construction
 The data should be constructed as <entitiy \t predicated concept>, for example
 ```
-Nicolae Grosu \t 20th - century bessian politicians  
-Nicolae Grosu \t bessarabian politicians
-Nicolae Grosu \t overnment ministers of bessarabia
+Nicolae Grosu \t 20th - century bessian politicians  \n
+Nicolae Grosu \t bessarabian politicians \n
+Nicolae Grosu \t overnment ministers of bessarabia \n
 ```
 ### Train
 Then we run the concept-topic classifier based on BERT
