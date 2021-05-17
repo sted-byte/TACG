@@ -1,5 +1,5 @@
 # TACG
-Code for the paper "A Novel Framework for Topic-Alignment Concept Generation"
+Code for the paper "Large-scale Concept Generation through Topic Alignment"
 
 ## Requirements
 
